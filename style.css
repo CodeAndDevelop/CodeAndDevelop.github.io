@@ -434,36 +434,16 @@ html {
     box-shadow: 0 8px 20px var(--card-shadow);
 }
 
-.day-1 {
-    border-left-color: #3b82f6 !important;
+.day-1, .day-2, .day-3, .day-4 {
+    border-left-color: var(--primary) !important;
 }
 
-.day-header.day-1 {
-    background: linear-gradient(90deg, rgba(59, 130, 246, 0.05) 0%, transparent 100%);
-}
-
-.day-2 {
-    border-left-color: #10b981 !important;
-}
-
-.day-header.day-2 {
-    background: linear-gradient(90deg, rgba(16, 185, 129, 0.05) 0%, transparent 100%);
-}
-
-.day-3 {
-    border-left-color: #f59e0b !important;
-}
-
-.day-header.day-3 {
-    background: linear-gradient(90deg, rgba(245, 158, 11, 0.05) 0%, transparent 100%);
-}
-
-.day-4 {
-    border-left-color: #ef4444 !important;
-}
-
+.day-header.day-1,
+.day-header.day-2,
+.day-header.day-3,
 .day-header.day-4 {
-    background: linear-gradient(90deg, rgba(239, 68, 68, 0.05) 0%, transparent 100%);
+    background: linear-gradient(90deg, rgba(124,58,237,0.12) 0%, rgba(124,58,237,0.02) 100%);
+    border-bottom: 1px solid rgba(124,58,237,0.10);
 }
 
 .day-header {
@@ -471,7 +451,39 @@ html {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    border-radius: 8px 8px 0 0;
+    justify-content: flex-start;
 }
+
+/* Classy header enhancements for day cards */
+.day-header .day-number {
+    box-shadow: 0 10px 30px rgba(2,6,23,0.08);
+    transform: translateY(-4px);
+}
+
+.day-header h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Slightly elevate the content area for contrast */
+.workshop-day .day-content {
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.01) 100%);
+    padding: 1.25rem 2rem 2rem 2rem;
+}
+
+/* Make topic badges cleaner */
+.day-topics li {
+    padding: 0.7rem 1rem;
+    background: rgba(255,255,255,0.02);
+    border-radius: 6px;
+    color: var(--text-secondary);
+    box-shadow: 0 6px 18px rgba(2,6,23,0.03);
+}
+
 
 .day-number {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);

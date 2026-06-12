@@ -436,21 +436,33 @@ html {
 
 .day-1 {
     border-left-color: #3b82f6 !important;
+}
+
+.day-header.day-1 {
     background: linear-gradient(90deg, rgba(59, 130, 246, 0.05) 0%, transparent 100%);
 }
 
 .day-2 {
     border-left-color: #10b981 !important;
+}
+
+.day-header.day-2 {
     background: linear-gradient(90deg, rgba(16, 185, 129, 0.05) 0%, transparent 100%);
 }
 
 .day-3 {
     border-left-color: #f59e0b !important;
+}
+
+.day-header.day-3 {
     background: linear-gradient(90deg, rgba(245, 158, 11, 0.05) 0%, transparent 100%);
 }
 
 .day-4 {
     border-left-color: #ef4444 !important;
+}
+
+.day-header.day-4 {
     background: linear-gradient(90deg, rgba(239, 68, 68, 0.05) 0%, transparent 100%);
 }
 
